@@ -7,9 +7,10 @@
   conflictstyle = diff3
 
 [alias]
-  s = status
+  st = status
   co = checkout
 	ci = commit
   history = "log -p"
 	unstage = reset --soft HEAD^
 	pull = pull --prune
+  delete-local-branches = "git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d"

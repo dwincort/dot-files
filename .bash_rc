@@ -1,12 +1,13 @@
 export PATH=$PATH:~/.cabal/bin
 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-
 alias atom="open -a Atom"
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+__git_complete "config" __git_main
 
 if [ -f ~/.cabal-completion.bash ]; then
   . ~/.cabal-completion.bash
@@ -18,14 +19,6 @@ function h() {
 
 function grephs() {
   grep -rn --include \*.hs "$1" */*
-}
-
-function git() {
-  case $1 in
-    st ) shift 1; command git status "$@" ;;
-    delete-local-branches ) git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d ;;
-    * ) command git "$@" ;;
-  esac
 }
 
 function cabal() {
