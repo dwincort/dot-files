@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+  name = Daniel.Winograd-Cort
+
+[merge]
+  conflictstyle = diff3
+
+[alias]
+  s = status
+  co = checkout
+	ci = commit
+  history = "log -p"
+	unstage = reset --soft HEAD^
+	pull = pull --prune

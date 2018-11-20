@@ -1,0 +1,49 @@
+"*":
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  core:
+    audioBeep: false
+    customFileTypes:
+      "source.haskell": [
+        "theta"
+      ]
+    disabledPackages: [
+      "autocomplete-snippets"
+      "autocomplete-haskell"
+      "haskell-hoogle"
+      "ide-haskell-hoogle"
+      "ide-haskell-repl"
+      "ide-haskell-cabal"
+      "ide-haskell"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "*.el"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "no"
+    titleBar: "hidden"
+  editor:
+    atomicSoftTabs: false
+    fontSize: 20
+    scrollPastEnd: true
+    softWrap: true
+  "exception-reporting":
+    userId: "988800b7-ea80-4ca5-8d18-f1dcf87b26a1"
+  "haskell-ghc-mod":
+    lowMemorySystem: true
+  "latex-completions":
+    customAliases: "$HOME/.atom_latex_completions.json"
+  touchbar:
+    buttons: "[{\"type\":\"button\",\"name\":\"Config 1524947924088\",\"label\":\"prettify\",\"color\":\"#942192\",\"command\":\"atom-beautify:beautify-editor\"},{\"name\":\"comment-button\",\"type\":\"button\",\"label\":\"--\",\"command\":\"editor:toggle-line-comments\",\"color\":\"#5712d6\"},{\"name\":\"beautify-button\",\"type\":\"button\",\"label\":\">>=\",\"command\":\"haskell-pointfree:toggle\",\"color\":\"#83FF8F\"},{\"type\":\"button\",\"name\":\"Config 1535047677589\",\"label\":\"find\",\"iconColor\":\"default\",\"command\":\"find-and-replace:find-next\"},{\"type\":\"button\",\"name\":\"Config 1535047827389\",\"label\":\"goto\",\"command\":\"go-to-line:toggle\"}]"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,5 @@
+:set prompt "\ESC[34mλ> \ESC[m"
+:set -XTypeApplications
+:set -XExplicitForAll
+:set -XGADTs
+:set -fno-warn-missing-home-modules
