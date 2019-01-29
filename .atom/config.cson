@@ -32,7 +32,7 @@
     titleBar: "hidden"
   editor:
     atomicSoftTabs: false
-    fontSize: 20
+    fontSize: 22
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
