@@ -1,5 +1,10 @@
 :set prompt "\ESC[34mλ> \ESC[m"
-:set -XTypeApplications
+:set -XDeriveGeneric
+:set -XDeriveTraversable
 :set -XExplicitForAll
 :set -XGADTs
+:set -XTupleSections
+:set -XTypeApplications
 :set -fno-warn-missing-home-modules
+:def hoogle \x -> return $ ":!hoogle \"" ++ x ++ "\""
+:def pf \x -> return $ ":!pointfree \"" ++ x ++ "\""

@@ -21,6 +21,10 @@ function grephs() {
   grep -rn --include \*.hs "$1" */*
 }
 
+function lhs2pdf() {
+  lhs2tex "$1.lhs" > "$1.tex"; pdflatex "$1.tex"
+}
+
 function cabal() {
   case $1 in
     repl ) shift 1; command cabal new-repl "$@" ;;

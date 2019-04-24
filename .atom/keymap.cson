@@ -42,6 +42,7 @@
   'cmd-right': 'editor:move-to-end-of-word'
   'cmd-shift-left': 'editor:select-to-beginning-of-word'
   'cmd-shift-right': 'editor:select-to-end-of-word'
+  'cmd-t': 'application:new-file'
 
 'body':
     'ctrl-tab ^ctrl': 'unset!'

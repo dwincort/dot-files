@@ -32,7 +32,7 @@
     titleBar: "hidden"
   editor:
     atomicSoftTabs: false
-    fontSize: 22
+    fontSize: 18
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
@@ -45,5 +45,6 @@
     buttons: "[{\"type\":\"button\",\"name\":\"Config 1524947924088\",\"label\":\"prettify\",\"color\":\"#942192\",\"command\":\"atom-beautify:beautify-editor\"},{\"name\":\"comment-button\",\"type\":\"button\",\"label\":\"--\",\"command\":\"editor:toggle-line-comments\",\"color\":\"#5712d6\"},{\"name\":\"beautify-button\",\"type\":\"button\",\"label\":\">>=\",\"command\":\"haskell-pointfree:toggle\",\"color\":\"#83FF8F\"},{\"type\":\"button\",\"name\":\"Config 1535047677589\",\"label\":\"find\",\"iconColor\":\"default\",\"command\":\"find-and-replace:find-next\"},{\"type\":\"button\",\"name\":\"Config 1535047827389\",\"label\":\"goto\",\"command\":\"go-to-line:toggle\"}]"
   "tree-view":
     hideIgnoredNames: true
+    squashDirectoryNames: true
   welcome:
     showOnStartup: false
