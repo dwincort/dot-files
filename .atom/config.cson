@@ -14,6 +14,7 @@
       "ide-haskell-hoogle"
       "ide-haskell-repl"
       "ide-haskell-cabal"
+      "file-icons"
       "ide-haskell"
     ]
     excludeVcsIgnoredPaths: false
@@ -32,15 +33,23 @@
     titleBar: "hidden"
   editor:
     atomicSoftTabs: false
-    fontSize: 18
+    autoIndentOnPaste: false
+    fontSize: 15
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
     userId: "988800b7-ea80-4ca5-8d18-f1dcf87b26a1"
+  "file-icons":
+    coloured: false
   "haskell-ghc-mod":
     lowMemorySystem: true
+  "ide-haskell": {}
   "latex-completions":
     customAliases: "$HOME/.atom_latex_completions.json"
+  tabs:
+    addNewTabsAtEnd: true
+    displayMruTabList: false
+    enableMruTabSwitching: false
   touchbar:
     buttons: "[{\"type\":\"button\",\"name\":\"Config 1524947924088\",\"label\":\"prettify\",\"color\":\"#942192\",\"command\":\"atom-beautify:beautify-editor\"},{\"name\":\"comment-button\",\"type\":\"button\",\"label\":\"--\",\"command\":\"editor:toggle-line-comments\",\"color\":\"#5712d6\"},{\"name\":\"beautify-button\",\"type\":\"button\",\"label\":\">>=\",\"command\":\"haskell-pointfree:toggle\",\"color\":\"#83FF8F\"},{\"type\":\"button\",\"name\":\"Config 1535047677589\",\"label\":\"find\",\"iconColor\":\"default\",\"command\":\"find-and-replace:find-next\"},{\"type\":\"button\",\"name\":\"Config 1535047827389\",\"label\":\"goto\",\"command\":\"go-to-line:toggle\"}]"
   "tree-view":
@@ -48,3 +57,7 @@
     squashDirectoryNames: true
   welcome:
     showOnStartup: false
+  whitespace: {}
+".haskell.source":
+  editor:
+    increaseIndentPattern: "(((=|\\bdo|\\bwhere|\\bthen|\\belse|\\bof|\\{)\\s*)|(\\bif(?!.*\\bthen\\b.*\\belse\\b.*).*))$"

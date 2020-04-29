@@ -32,7 +32,7 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 'atom-text-editor':
   'cmd-k': 'editor:toggle-line-comments'
-  'cmd-shift-k': 'editor:delete-line'
+  'cmd-shift-d': 'editor:delete-line'
   'cmd-d': 'editor:duplicate-lines'
   'alt-left': 'core:move-left'
   'alt-right': 'core:move-right'
@@ -43,6 +43,11 @@
   'cmd-shift-left': 'editor:select-to-beginning-of-word'
   'cmd-shift-right': 'editor:select-to-end-of-word'
   'cmd-t': 'application:new-file'
+  'shift-cmd-U': 'editor:upper-case'
+  'cmd-u': 'editor:lower-case'
+  'cmd-shift-j': 'autoflow:reflow-selection'
+  'ctrl-w': 'editor:toggle-soft-wrap'
+  'cmd-i': 'editor:auto-indent'
 
 'body':
     'ctrl-tab ^ctrl': 'unset!'

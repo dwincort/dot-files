@@ -2,6 +2,8 @@ export PATH=$PATH:~/.cabal/bin
 
 alias atom="open -a Atom"
 
+alias removeFirstLine="tail -n +2"
+
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
