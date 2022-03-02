@@ -1,7 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-  name = Daniel.Winograd-Cort
+	name = Daniel
+	email = daniel@luminouscomputing.com
 
 [merge]
   conflictstyle = diff3
@@ -9,8 +10,8 @@
 [alias]
   st = status
   co = checkout
-	ci = commit
+  ci = commit
   history = "log -p"
-	unstage = reset --soft HEAD^
-	pullp = pull --prune
+  unstage = reset --soft HEAD^
+  pullp = pull --prune
   delete-local-branches = "!git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d"

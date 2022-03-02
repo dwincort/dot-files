@@ -1,6 +1,8 @@
 "*":
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  "bracket-matcher":
+    highlightMatchingLineNumber: true
   core:
     audioBeep: false
     customFileTypes:
@@ -9,13 +11,12 @@
       ]
     disabledPackages: [
       "autocomplete-snippets"
-      "autocomplete-haskell"
-      "haskell-hoogle"
-      "ide-haskell-hoogle"
       "ide-haskell-repl"
       "ide-haskell-cabal"
       "file-icons"
       "ide-haskell"
+      "haskell-hoogle"
+      "autocomplete-haskell"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -28,13 +29,12 @@
       "desktop.ini"
       "*.el"
     ]
-    packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     titleBar: "hidden"
   editor:
     atomicSoftTabs: false
     autoIndentOnPaste: false
-    fontSize: 15
+    fontSize: 17
     scrollPastEnd: true
     softWrap: true
   "exception-reporting":
@@ -44,8 +44,18 @@
   "haskell-ghc-mod":
     lowMemorySystem: true
   "ide-haskell": {}
+  "ide-haskell-hoogle":
+    hoogleType: ""
   "latex-completions":
     customAliases: "$HOME/.atom_latex_completions.json"
+  "markdown-pdf":
+    format: "Letter"
+  "spell-check":
+    addKnownWords: true
+    locales: [
+      "en-US"
+    ]
+    useLocales: false
   tabs:
     addNewTabsAtEnd: true
     displayMruTabList: false
@@ -61,3 +71,6 @@
 ".haskell.source":
   editor:
     increaseIndentPattern: "(((=|\\bdo|\\bwhere|\\bthen|\\belse|\\bof|\\{)\\s*)|(\\bif(?!.*\\bthen\\b.*\\belse\\b.*).*))$"
+".source.tablegen":
+  editor:
+    autoIndent: false
