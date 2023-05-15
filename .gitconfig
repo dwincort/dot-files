@@ -8,10 +8,26 @@
   conflictstyle = diff3
 
 [alias]
-  st = status
+  st = status -sb #short status but still show branch data
   co = checkout
   ci = commit
-  history = "log -p"
+  rbc = rebase --continue
+  amend-commit = commit --amend --no-edit #add the current staged stuff into the most recent commit without changing the commit message
+  remessage-commit = commit --amend -m #Takes a string as argument. Changes the commit message for the most recent commit
   unstage = reset --soft HEAD^
+  reset-origin=reset --hard @{u}
   pullp = pull --prune
-  delete-local-branches = "!git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d"
+  delete-local-branches = "!git branch -vv | grep ' gone]' | awk '{print $1}' | xargs git branch -d" #Delete branches that are no longer on origin
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop\\|main' | xargs -n 1 -r git branch -d" #Delete branches that have been merged into master, develop, or main
+  pf = push --force
+  ll = log --oneline #show the history, but show only one line for each entry
+  last = log -1 HEAD --stat #show the most recent commit in full detail
+  rbmain = "!f() {                 \
+      git fetch --all;             \
+      git rebase -i origin/main;   \
+  }; f" #Fetch the latest changes from origin/main and then rebase the current branch onto them
+  stash-untracked = "!f() {    \
+      git stash;               \
+      git stash -u;            \
+      git stash pop stash@{1}; \
+  }; f" #Stash only files that are _untracked_

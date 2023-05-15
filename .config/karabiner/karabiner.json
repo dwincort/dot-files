@@ -216,7 +216,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "illumination_decrement"
+                            "key_code": "f5"
                         }
                     ]
                 },
@@ -226,7 +226,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "illumination_increment"
+                            "apple_vendor_keyboard_key_code": "spotlight"
                         }
                     ]
                 },
@@ -236,7 +236,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "rewind"
+                            "key_code": "illumination_decrement"
                         }
                     ]
                 },
@@ -246,7 +246,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "play_or_pause"
+                            "apple_vendor_top_case_key_code": "illumination_toggle"
                         }
                     ]
                 },
@@ -256,7 +256,7 @@
                     },
                     "to": [
                         {
-                            "key_code": "fastforward"
+                            "key_code": "illumination_increment"
                         }
                     ]
                 },
