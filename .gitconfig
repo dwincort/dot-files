@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = Daniel
-	email = daniel@luminouscomputing.com
+	name = Dan
+	email = dan@nectry.com
 
 [merge]
   conflictstyle = diff3
@@ -31,3 +31,7 @@
       git stash -u;            \
       git stash pop stash@{1}; \
   }; f" #Stash only files that are _untracked_
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
